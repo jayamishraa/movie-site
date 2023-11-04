@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.header, .sidebar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #fafafa;
+    position: fixed;
+    z-index: 5;
+}
+.header{
+    height: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 99%;
+}
+.sidebar{
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 20vw;
+}
+.sidebar i, .sidebar div{
+    margin-top: 30px;
+}
+.dynamic-container{
+    margin-left: 20vw;
+    padding-top: 50px;
+    background-color: aquamarine;
+}
+.movie-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.6)), url(https://www.whatsong.org/images/movie/backdrop/sPPsR9f4K0movWVQ99u4uMqFzEL.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.movie-container div{
+    color: #fafafa;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+}
+
