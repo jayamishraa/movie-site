@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import MovieContainer from '../components/MovieContainer'
 import axios from 'axios'
 // import MovieTile from '../components/MovieTile';
+import Dropdown from '../components/Dropdown'
 
 function Home() {
     const [movie, getMovie] = useState([])
@@ -45,8 +46,10 @@ function Home() {
   return (
     <div className='home'>
         <MovieContainer />
+        <Dropdown />
 
         <h3 style={{color: '#fafafa'}}> Trending now</h3>
+
         <div className='home-movies'>
           {movie.map(val => {
             const {id, title, poster_path} = val
