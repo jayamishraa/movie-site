@@ -18,3 +18,10 @@ export const trending = (data) => {
         payload: data
     }
 }
+
+export const search = (data) => {
+    return{
+        type: "SEARCH",
+        payload: data
+    }
+}

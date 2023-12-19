@@ -1,5 +1,6 @@
 const initialState = {
-    trendingApi: []
+    trendingApi: [],
+    searchId: 0
 }
 
 const movieReducer = (state=initialState, action)=>{
@@ -9,8 +10,15 @@ const movieReducer = (state=initialState, action)=>{
                 ...state,
                 trendingApi: action.payload
             }
+        case 'SEARCH':
+            return{
+                ...state,
+                searchId: action.payload
+            }
 
         default:
             return state;
     }
 }
+
+export default movieReducer
