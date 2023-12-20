@@ -13,7 +13,8 @@ function Main() {
         <div className='Main'>
             <Header />
             { isDropdown && <Dropdown />}
-            { isSidebar && <Sidebar />}
+            {/* { isSidebar && <Sidebar />} */}
+            <Sidebar />
             <div className={isSidebar ? "dynamic-container" : "dynamic-container-expanded"}> </div>
             <Outlet />
         </div> 

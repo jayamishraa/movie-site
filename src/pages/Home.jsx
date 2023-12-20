@@ -37,7 +37,7 @@ function Home() {
     <div className='home'>
       <MovieContainer />
 
-      <h3 style={{color: '#fafafa'}}> Trending now</h3>
+      <h3 style={{color: '#fafafa', margin: '20px'}}> Trending now</h3>
 
       <div className='home-movies'>
         {trendingApi.map(val => {
