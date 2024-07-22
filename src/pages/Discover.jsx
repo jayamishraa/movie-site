@@ -37,7 +37,7 @@ function TopRated() {
                 return(
                     <div className='movie-tile'>
                         <div className='movie-tile-content'> 
-                            <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} style={{width: 150}} />
+                            <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} style={{width: 150}} alt='image' />
                             <h5 style={{color: '#fafafa'}}>{title}</h5>
                             <Link to='/detail'>
                             <button onClick={()=> dispatch(search(id))}>details</button>

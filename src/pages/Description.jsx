@@ -40,6 +40,7 @@ function Description() {
                     src={`https://image.tmdb.org/t/p/w500${movieData.poster_path}`} 
                     height='450' 
                     width='auto' 
+                    alt='image'
                 />
             </div>
             <div className='description-content'>
